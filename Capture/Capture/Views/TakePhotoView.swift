@@ -23,12 +23,12 @@ class TakePhotoView: UIView {
     
     ///
     func updateDataColors() {
-//        colorView.backgroundColor = currentColor
-//        indicatorColorView.backgroundColor = currentColor
-//        indicatorLineColorView.layer.borderColor = currentColor.cgColor
-//        ///
-//        hexLabel.text = ConvertColor.hexStringFromColor(color: currentColor)
-//        rgbLabel.text = ConvertColor.rgbStringFromColor(color: currentColor)
+        colorView.backgroundColor = currentColor
+        indicatorColorView.backgroundColor = currentColor
+        indicatorLineColorView.layer.borderColor = currentColor.cgColor
+        ///
+        hexLabel.text = ConvertColor.hexStringFromColor(color: currentColor)
+        rgbLabel.text = ConvertColor.rgbStringFromColor(color: currentColor)
     }
 }
 
@@ -37,9 +37,7 @@ class TakePhotoView: UIView {
 extension TakePhotoView {
     func setUI() {
         setLabels()
-        let delta = bottomContainer.frame.height / 4
-        verticalCenterConstraint.constant = verticalCenterConstraint.constant - delta
-                
+
         indicatorLineColorView.backgroundColor = .clear
         centerTarget.backgroundColor = .clear
         centerTarget.layer.borderColor = UIColor.white.cgColor
@@ -53,6 +51,9 @@ extension TakePhotoView {
         сontinueButton.layer.cornerRadius = 8.0
         
         сontinueButton.isHidden = true
+        
+        let delta = bottomContainer.frame.height / 2
+        verticalCenterConstraint.constant = verticalCenterConstraint.constant - delta
     }
     
     func setLabels() {

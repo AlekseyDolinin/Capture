@@ -46,7 +46,6 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     ///
     func renderCurrentImage() {
-        
         currentImage = UIImage()
     }
     
@@ -80,5 +79,4 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
     @IBAction func back(_ sender: UIButton) {
         dismiss(animated: true)
     }
-    
 }

@@ -72,11 +72,11 @@
 			children = (
 				9109BE1027BFCDEF00C4A419 /* AppDelegate.swift */,
 				9109BE1227BFCDEF00C4A419 /* SceneDelegate.swift */,
+				9109BE1627BFCDEF00C4A419 /* Main.storyboard */,
 				9109BE2D27BFD85700C4A419 /* Views */,
 				9109BE2E27BFD86200C4A419 /* Controllers */,
 				9152051F27C8DC580098EC78 /* Utils */,
 				9152051E27C8DC4E0098EC78 /* Resourses */,
-				9109BE1627BFCDEF00C4A419 /* Main.storyboard */,
 				9109BE1927BFCDEF00C4A419 /* Assets.xcassets */,
 				9109BE1E27BFCDEF00C4A419 /* Info.plist */,
 			);
