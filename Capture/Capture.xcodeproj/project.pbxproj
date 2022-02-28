@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1B70C0088C9FF26D2E1F8F9B /* Pods_Capture.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF7E30820333ACEF9FF9A741 /* Pods_Capture.framework */; };
 		9109BE1127BFCDEF00C4A419 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109BE1027BFCDEF00C4A419 /* AppDelegate.swift */; };
 		9109BE1327BFCDEF00C4A419 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9109BE1227BFCDEF00C4A419 /* SceneDelegate.swift */; };
 		9109BE1827BFCDEF00C4A419 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9109BE1627BFCDEF00C4A419 /* Main.storyboard */; };
@@ -20,9 +21,18 @@
 		9152051627C79A5E0098EC78 /* SF-Compact-Text-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9152051527C79A5E0098EC78 /* SF-Compact-Text-Regular.otf */; };
 		9152051A27C7AA360098EC78 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152051927C7AA360098EC78 /* StartViewController.swift */; };
 		9152051C27C7B40A0098EC78 /* ConvertColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152051B27C7B40A0098EC78 /* ConvertColor.swift */; };
+		9152052227CCA97B0098EC78 /* StartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052127CCA97B0098EC78 /* StartView.swift */; };
+		9152052527CCAA2C0098EC78 /* CaptureCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052427CCAA2C0098EC78 /* CaptureCell.swift */; };
+		9152052727CCAA890098EC78 /* StartDelegates.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052627CCAA890098EC78 /* StartDelegates.swift */; };
+		9152052A27CCAB8D0098EC78 /* Capture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052927CCAB8D0098EC78 /* Capture.swift */; };
+		9152052C27CCAD760098EC78 /* GetVersionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052B27CCAD760098EC78 /* GetVersionApp.swift */; };
+		9152052E27CCB0400098EC78 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052D27CCB0400098EC78 /* Archive.swift */; };
+		9152053027CCCEBB0098EC78 /* NamesNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052F27CCCEBB0098EC78 /* NamesNotification.swift */; };
+		9152053227CCD3640098EC78 /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053127CCD3640098EC78 /* PreviewImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BDA01B14889AE797B00B620 /* Pods-Capture.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capture.debug.xcconfig"; path = "Target Support Files/Pods-Capture/Pods-Capture.debug.xcconfig"; sourceTree = "<group>"; };
 		9109BE0D27BFCDEF00C4A419 /* Capture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Capture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9109BE1027BFCDEF00C4A419 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9109BE1227BFCDEF00C4A419 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -38,6 +48,16 @@
 		9152051527C79A5E0098EC78 /* SF-Compact-Text-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "SF-Compact-Text-Regular.otf"; sourceTree = "<group>"; };
 		9152051927C7AA360098EC78 /* StartViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartViewController.swift; sourceTree = "<group>"; };
 		9152051B27C7B40A0098EC78 /* ConvertColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertColor.swift; sourceTree = "<group>"; };
+		9152052127CCA97B0098EC78 /* StartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartView.swift; sourceTree = "<group>"; };
+		9152052427CCAA2C0098EC78 /* CaptureCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaptureCell.swift; sourceTree = "<group>"; };
+		9152052627CCAA890098EC78 /* StartDelegates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartDelegates.swift; sourceTree = "<group>"; };
+		9152052927CCAB8D0098EC78 /* Capture.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Capture.swift; sourceTree = "<group>"; };
+		9152052B27CCAD760098EC78 /* GetVersionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVersionApp.swift; sourceTree = "<group>"; };
+		9152052D27CCB0400098EC78 /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
+		9152052F27CCCEBB0098EC78 /* NamesNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesNotification.swift; sourceTree = "<group>"; };
+		9152053127CCD3640098EC78 /* PreviewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
+		D9926CC6D403A1E8B642A1B3 /* Pods-Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capture.release.xcconfig"; path = "Target Support Files/Pods-Capture/Pods-Capture.release.xcconfig"; sourceTree = "<group>"; };
+		DF7E30820333ACEF9FF9A741 /* Pods_Capture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,17 +65,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1B70C0088C9FF26D2E1F8F9B /* Pods_Capture.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		02DB3C42333FD7FB81F87743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF7E30820333ACEF9FF9A741 /* Pods_Capture.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1E6F8628C4229AE141A73E52 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BDA01B14889AE797B00B620 /* Pods-Capture.debug.xcconfig */,
+				D9926CC6D403A1E8B642A1B3 /* Pods-Capture.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		9109BE0427BFCDEF00C4A419 = {
 			isa = PBXGroup;
 			children = (
 				9109BE0F27BFCDEF00C4A419 /* Capture */,
 				9109BE0E27BFCDEF00C4A419 /* Products */,
+				1E6F8628C4229AE141A73E52 /* Pods */,
+				02DB3C42333FD7FB81F87743 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +114,8 @@
 				9109BE1027BFCDEF00C4A419 /* AppDelegate.swift */,
 				9109BE1227BFCDEF00C4A419 /* SceneDelegate.swift */,
 				9109BE1627BFCDEF00C4A419 /* Main.storyboard */,
+				9152052827CCAB1D0098EC78 /* Models */,
+				9152052327CCA9FF0098EC78 /* Cells */,
 				9109BE2D27BFD85700C4A419 /* Views */,
 				9109BE2E27BFD86200C4A419 /* Controllers */,
 				9152051F27C8DC580098EC78 /* Utils */,
@@ -96,6 +139,7 @@
 		9109BE2D27BFD85700C4A419 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				9152052127CCA97B0098EC78 /* StartView.swift */,
 				9109BE2B27BFD5CD00C4A419 /* TakePhotoView.swift */,
 			);
 			path = Views;
@@ -104,8 +148,9 @@
 		9109BE2E27BFD86200C4A419 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9152051927C7AA360098EC78 /* StartViewController.swift */,
+				9152052027CCA9750098EC78 /* Start */,
 				9109BE2427BFD03E00C4A419 /* TakePhoto */,
+				9152053127CCD3640098EC78 /* PreviewImageViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -130,10 +175,38 @@
 		9152051F27C8DC580098EC78 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				9152052B27CCAD760098EC78 /* GetVersionApp.swift */,
 				9109BE2F27BFDE1900C4A419 /* UIImage.swift */,
 				9152051B27C7B40A0098EC78 /* ConvertColor.swift */,
+				9152052D27CCB0400098EC78 /* Archive.swift */,
+				9152052F27CCCEBB0098EC78 /* NamesNotification.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		9152052027CCA9750098EC78 /* Start */ = {
+			isa = PBXGroup;
+			children = (
+				9152051927C7AA360098EC78 /* StartViewController.swift */,
+				9152052627CCAA890098EC78 /* StartDelegates.swift */,
+			);
+			path = Start;
+			sourceTree = "<group>";
+		};
+		9152052327CCA9FF0098EC78 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				9152052427CCAA2C0098EC78 /* CaptureCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		9152052827CCAB1D0098EC78 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				9152052927CCAB8D0098EC78 /* Capture.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -143,9 +216,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9109BE2127BFCDEF00C4A419 /* Build configuration list for PBXNativeTarget "Capture" */;
 			buildPhases = (
+				1FC9AE4A19999A258704F0E0 /* [CP] Check Pods Manifest.lock */,
 				9109BE0927BFCDEF00C4A419 /* Sources */,
 				9109BE0A27BFCDEF00C4A419 /* Frameworks */,
 				9109BE0B27BFCDEF00C4A419 /* Resources */,
+				D56A53FD87C3779FE23ADB97 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -203,18 +278,68 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1FC9AE4A19999A258704F0E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Capture-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D56A53FD87C3779FE23ADB97 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capture/Pods-Capture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capture/Pods-Capture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Capture/Pods-Capture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		9109BE0927BFCDEF00C4A419 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9152053227CCD3640098EC78 /* PreviewImageViewController.swift in Sources */,
+				9152052227CCA97B0098EC78 /* StartView.swift in Sources */,
 				9109BE2827BFD04400C4A419 /* TakePhotoDelegates.swift in Sources */,
 				9152051A27C7AA360098EC78 /* StartViewController.swift in Sources */,
+				9152052527CCAA2C0098EC78 /* CaptureCell.swift in Sources */,
 				9109BE3027BFDE1900C4A419 /* UIImage.swift in Sources */,
 				9109BE2927BFD04600C4A419 /* TakePhotoController.swift in Sources */,
 				9109BE1127BFCDEF00C4A419 /* AppDelegate.swift in Sources */,
+				9152052727CCAA890098EC78 /* StartDelegates.swift in Sources */,
+				9152052A27CCAB8D0098EC78 /* Capture.swift in Sources */,
+				9152052C27CCAD760098EC78 /* GetVersionApp.swift in Sources */,
+				9152052E27CCB0400098EC78 /* Archive.swift in Sources */,
 				9109BE1327BFCDEF00C4A419 /* SceneDelegate.swift in Sources */,
 				9109BE2C27BFD5CD00C4A419 /* TakePhotoView.swift in Sources */,
+				9152053027CCCEBB0098EC78 /* NamesNotification.swift in Sources */,
 				9152051C27C7B40A0098EC78 /* ConvertColor.swift in Sources */,
 				9109BE2A27BFD04800C4A419 /* PhotoCapture.swift in Sources */,
 			);
@@ -350,6 +475,7 @@
 		};
 		9109BE2227BFCDEF00C4A419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BDA01B14889AE797B00B620 /* Pods-Capture.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -380,6 +506,7 @@
 		};
 		9109BE2327BFCDEF00C4A419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9926CC6D403A1E8B642A1B3 /* Pods-Capture.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;

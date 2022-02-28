@@ -15,6 +15,8 @@ class TakePhotoView: UIView {
     @IBOutlet weak var сontinueButton: UIButton!
     @IBOutlet weak var actionButton: UIButton!
     
+    @IBOutlet weak var temp: UIImageView!
+    
     var currentColor: UIColor!
     
     override func awakeFromNib() {

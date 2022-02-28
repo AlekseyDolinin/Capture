@@ -46,7 +46,23 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     ///
     func renderCurrentImage() {
-        currentImage = UIImage()
+        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
+        let imageRender = renderer.image { ctx in
+            viewSelf.basicView.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
+        }
+        currentImage = imageRender
+        viewSelf.temp.image = imageRender
+    }
+    
+    ///
+    func saveCapture(completion: @escaping (Bool) -> ()) {
+        Archive.createCapture(imageCapture: self.currentImage, colorCapture: self.currentColor) { capture in
+            Archive.addCaptureInArchive(capture: capture) { bool in
+                if bool == true {
+                    completion(true)
+                }
+            }
+        }
     }
     
     ///
@@ -55,12 +71,17 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
         viewSelf.сontinueButton.isHidden = false
         viewSelf.actionButton.setTitle("SAVE", for: .normal)
         stateApp = .hold
-        print(currentImage)
+        renderCurrentImage()
     }
     
     ///
     func saveColor() {
-        self.dismiss(animated: true)
+        saveCapture { bool in
+            if bool == true {
+                NotificationCenter.default.post(name: nReloadTableArchive, object: nil)
+                self.dismiss(animated: true)
+            }
+        }
     }
     
     ///
