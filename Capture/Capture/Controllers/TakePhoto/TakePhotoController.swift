@@ -55,6 +55,7 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
         viewSelf.сontinueButton.isHidden = false
         viewSelf.actionButton.setTitle("SAVE", for: .normal)
         stateApp = .hold
+        print(currentImage)
     }
     
     ///

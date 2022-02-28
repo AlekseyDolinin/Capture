@@ -2,6 +2,7 @@ import UIKit
 
 class TakePhotoView: UIView {
     
+    @IBOutlet weak var basicView: UIView!
     @IBOutlet weak var colorView: UIView!
     @IBOutlet weak var indicatorColorView: UIView!
     @IBOutlet weak var indicatorLineColorView: UIView!
