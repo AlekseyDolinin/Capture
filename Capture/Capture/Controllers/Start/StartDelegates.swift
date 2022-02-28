@@ -9,7 +9,7 @@ extension StartViewController: UITableViewDelegate, UITableViewDataSource {
         let captureCell = tableView.dequeueReusableCell(withIdentifier: "CaptureCell", for: indexPath) as! CaptureCell
         captureCell.capture = Archive.archiveCaptures[indexPath.row]
         captureCell.setCell()
-        captureCell.index = indexPath.row
+        captureCell.indexCell = indexPath.row
         return captureCell
     }
 }

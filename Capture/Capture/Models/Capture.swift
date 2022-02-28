@@ -2,9 +2,9 @@ import UIKit
 
 struct Capture: Codable {
     
-    var date: String
-//    var imageCapture: UIImage
-//    var colorCapture: UIColor
+    var date: Date
+    var imageCapture: Data
+    var colorCapture: Data
     
 //    init(
 //        date: String
@@ -15,4 +15,8 @@ struct Capture: Codable {
 //        self.imageCapture = imageCapture
 //        self.colorCapture = colorCapture
 //    }
+    
+    
+    
+    
 }

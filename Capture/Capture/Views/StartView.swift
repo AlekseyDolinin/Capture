@@ -20,7 +20,7 @@ extension StartView {
     func setUI() {
         setLabels()
 
-
+        startCaptureButton.layer.cornerRadius = 8.0
     }
     
     func setLabels() {

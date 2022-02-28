@@ -56,7 +56,9 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     ///
     func saveCapture(completion: @escaping (Bool) -> ()) {
-        Archive.createCapture(imageCapture: self.currentImage, colorCapture: self.currentColor) { capture in
+        guard let pngDataImage: Data = self.currentImage.pngData() else {return}
+        guard let pngDataColor: Data = self.currentColor.encode() else {return}
+        Archive.createCapture(imageCaptureData: pngDataImage, colorCaptureData: pngDataColor) { capture in
             Archive.addCaptureInArchive(capture: capture) { bool in
                 if bool == true {
                     completion(true)
@@ -75,7 +77,7 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
     
     ///
-    func saveColor() {
+    func saveCapture() {
         saveCapture { bool in
             if bool == true {
                 NotificationCenter.default.post(name: nReloadTableArchive, object: nil)
@@ -86,7 +88,7 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
     
     ///
     @IBAction func actions(_ sender: UIButton) {
-        stateApp == .capture ? holdCapture() : saveColor()
+        stateApp == .capture ? holdCapture() : saveCapture()
     }
     
     ///

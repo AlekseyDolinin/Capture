@@ -11,6 +11,12 @@ class StartViewController: UIViewController {
         super.viewDidLoad()
         viewSelf.capturesTable.delegate = self
         viewSelf.capturesTable.dataSource = self
+        
+        Archive.parse { bool in
+            if bool == true {
+                self.viewSelf.capturesTable.reloadData()
+            }
+        }
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -21,12 +27,11 @@ class StartViewController: UIViewController {
         }
         
         NotificationCenter.default.addObserver(forName: nShowImage, object: nil, queue: nil) { notification in
-            if let index = notification.userInfo?["index"] as? Int {
-                let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreviewImageViewController") as! PreviewImageViewController
-                vc.modalPresentationStyle = .pageSheet
-                vc.previewImage = Archive.archiveCaptures[index].imageCapture
-                self.present(vc, animated: true)
-            }
+            guard let index = notification.userInfo?["index"] else {return}
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreviewImageViewController") as! PreviewImageViewController
+            vc.modalPresentationStyle = .pageSheet
+            vc.previewImage = UIImage(data: Archive.archiveCaptures[index as! Int].imageCapture, scale: 1.0)
+            self.present(vc, animated: true)
         }
     }
     

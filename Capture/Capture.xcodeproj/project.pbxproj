@@ -29,6 +29,7 @@
 		9152052E27CCB0400098EC78 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052D27CCB0400098EC78 /* Archive.swift */; };
 		9152053027CCCEBB0098EC78 /* NamesNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052F27CCCEBB0098EC78 /* NamesNotification.swift */; };
 		9152053227CCD3640098EC78 /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053127CCD3640098EC78 /* PreviewImageViewController.swift */; };
+		9152053427CCFF710098EC78 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053327CCFF710098EC78 /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +57,7 @@
 		9152052D27CCB0400098EC78 /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
 		9152052F27CCCEBB0098EC78 /* NamesNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesNotification.swift; sourceTree = "<group>"; };
 		9152053127CCD3640098EC78 /* PreviewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
+		9152053327CCFF710098EC78 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 		D9926CC6D403A1E8B642A1B3 /* Pods-Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capture.release.xcconfig"; path = "Target Support Files/Pods-Capture/Pods-Capture.release.xcconfig"; sourceTree = "<group>"; };
 		DF7E30820333ACEF9FF9A741 /* Pods_Capture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -86,7 +88,6 @@
 				3BDA01B14889AE797B00B620 /* Pods-Capture.debug.xcconfig */,
 				D9926CC6D403A1E8B642A1B3 /* Pods-Capture.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -180,6 +181,7 @@
 				9152051B27C7B40A0098EC78 /* ConvertColor.swift */,
 				9152052D27CCB0400098EC78 /* Archive.swift */,
 				9152052F27CCCEBB0098EC78 /* NamesNotification.swift */,
+				9152053327CCFF710098EC78 /* UIColor.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -338,6 +340,7 @@
 				9152052C27CCAD760098EC78 /* GetVersionApp.swift in Sources */,
 				9152052E27CCB0400098EC78 /* Archive.swift in Sources */,
 				9109BE1327BFCDEF00C4A419 /* SceneDelegate.swift in Sources */,
+				9152053427CCFF710098EC78 /* UIColor.swift in Sources */,
 				9109BE2C27BFD5CD00C4A419 /* TakePhotoView.swift in Sources */,
 				9152053027CCCEBB0098EC78 /* NamesNotification.swift in Sources */,
 				9152051C27C7B40A0098EC78 /* ConvertColor.swift in Sources */,

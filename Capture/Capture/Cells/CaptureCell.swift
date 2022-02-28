@@ -3,19 +3,17 @@ import UIKit
 class CaptureCell: UITableViewCell {
 
     @IBOutlet weak var colorIndicator: UIView!
-    @IBOutlet weak var numberCapture: UILabel!
     @IBOutlet weak var dateLabel: UILabel!
     @IBOutlet weak var hexLabel: UILabel!
     @IBOutlet weak var rgbLabel: UILabel!
     @IBOutlet weak var previewImage: UIImageView!
     @IBOutlet weak var openImageButtom: UIButton!
     
-    var index: Int!
+    var indexCell: Int!
     var capture: Capture!
     
     override func awakeFromNib() {
         super.awakeFromNib()
-
     }
 
     func setCell() {
@@ -23,37 +21,30 @@ class CaptureCell: UITableViewCell {
         setImagePreview()
         setHEX()
         setRGB()
-        setNumberCapture()
         setDate()
     }
     
     ///
     func setColorIndicator() {
-        colorIndicator.backgroundColor = capture.colorCapture
+        colorIndicator.backgroundColor = UIColor.color(data: capture.colorCapture)
     }
     
     ///
     func setImagePreview() {
-        previewImage.image = capture.imageCapture
         previewImage.layer.cornerRadius = 4.0
         previewImage.clipsToBounds = true
         previewImage.isUserInteractionEnabled = true
+        previewImage.image = UIImage(data: capture.imageCapture, scale: 1.0)
     }
     
     ///
     func setHEX() {
-        numberCapture.text = ConvertColor.hexStringFromColor(color: capture.colorCapture)
+        hexLabel.text = ConvertColor.hexStringFromColor(color: UIColor.color(data: capture.colorCapture)!)
     }
     
     ///
     func setRGB() {
-        numberCapture.text = ConvertColor.rgbStringFromColor(color: capture.colorCapture)
-    }
-    
-    ///
-    func setNumberCapture() {
-        guard let index = self.index else {return}
-        numberCapture.text = "#\(index + 1)"
+        rgbLabel.text = ConvertColor.rgbStringFromColor(color: UIColor.color(data: capture.colorCapture)!)
     }
     
     ///
@@ -66,7 +57,7 @@ class CaptureCell: UITableViewCell {
 
     ///
     @IBAction func openImage(_ sender: UIButton) {
-        NotificationCenter.default.post(name: nShowImage, object: nil, userInfo: ["index": index!])
+        NotificationCenter.default.post(name: nShowImage, object: nil, userInfo: ["index": indexCell!])
     }
     
 }
