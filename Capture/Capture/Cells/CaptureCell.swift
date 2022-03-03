@@ -7,9 +7,7 @@ class CaptureCell: UITableViewCell {
     @IBOutlet weak var hexLabel: UILabel!
     @IBOutlet weak var rgbLabel: UILabel!
     @IBOutlet weak var previewImage: UIImageView!
-    @IBOutlet weak var openImageButtom: UIButton!
     
-    var indexCell: Int!
     var capture: Capture!
     
     override func awakeFromNib() {
@@ -53,11 +51,6 @@ class CaptureCell: UITableViewCell {
         dateFormatter.dateStyle = .long
         dateFormatter.timeStyle = .short
         dateLabel.text = dateFormatter.string(from: capture.date)
-    }
-
-    ///
-    @IBAction func openImage(_ sender: UIButton) {
-        NotificationCenter.default.post(name: nShowImage, object: nil, userInfo: ["index": indexCell!])
     }
     
 }

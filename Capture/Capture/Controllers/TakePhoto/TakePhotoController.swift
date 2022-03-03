@@ -1,7 +1,8 @@
 import UIKit
 import AVFoundation
+import GoogleMobileAds
 
-class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
+class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate, GADBannerViewDelegate {
     
     var viewSelf: TakePhotoView! {
         guard isViewLoaded else { return nil }
@@ -20,6 +21,7 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
     }
     
     var stateApp: StateApp = .capture
+    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +30,13 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
         setDevice()
         setInputOutput()
         startRunningCaptureSession()
+        checkAppTrackingTransparency()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        checkAppTrackingTransparency()
+        setGadBanner()
     }
     
     ///
@@ -43,17 +52,7 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
         }
         return nil
     }
-    
-    ///
-    func renderCurrentImage() {
-        let renderer = UIGraphicsImageRenderer(size: view.bounds.size)
-        let imageRender = renderer.image { ctx in
-            viewSelf.basicView.drawHierarchy(in: view.bounds, afterScreenUpdates: true)
-        }
-        currentImage = imageRender
-        viewSelf.temp.image = imageRender
-    }
-    
+        
     ///
     func saveCapture(completion: @escaping (Bool) -> ()) {
         guard let pngDataImage: Data = self.currentImage.pngData() else {return}
@@ -73,7 +72,7 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate {
         viewSelf.сontinueButton.isHidden = false
         viewSelf.actionButton.setTitle("SAVE", for: .normal)
         stateApp = .hold
-        renderCurrentImage()
+        currentImage = RenderImage.render(viewTarget: viewSelf.basicView)
     }
     
     ///

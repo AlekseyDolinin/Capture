@@ -2,7 +2,7 @@ import UIKit
 
 extension UIColor {
     
-    class func color(data:Data) -> UIColor? {
+    class func color(data: Data) -> UIColor? {
         return try? NSKeyedUnarchiver.unarchiveTopLevelObjectWithData(data) as? UIColor
     }
     

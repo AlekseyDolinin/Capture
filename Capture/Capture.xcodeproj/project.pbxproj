@@ -28,8 +28,14 @@
 		9152052C27CCAD760098EC78 /* GetVersionApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052B27CCAD760098EC78 /* GetVersionApp.swift */; };
 		9152052E27CCB0400098EC78 /* Archive.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052D27CCB0400098EC78 /* Archive.swift */; };
 		9152053027CCCEBB0098EC78 /* NamesNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152052F27CCCEBB0098EC78 /* NamesNotification.swift */; };
-		9152053227CCD3640098EC78 /* PreviewImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053127CCD3640098EC78 /* PreviewImageViewController.swift */; };
 		9152053427CCFF710098EC78 /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053327CCFF710098EC78 /* UIColor.swift */; };
+		9152053A27CE6F7A0098EC78 /* AppTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053927CE6F7A0098EC78 /* AppTracking.swift */; };
+		9152053C27CE6F8E0098EC78 /* GoogleAdsBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053B27CE6F8E0098EC78 /* GoogleAdsBanner.swift */; };
+		9152053E27CF54B80098EC78 /* PreviewCaptureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053D27CF54B80098EC78 /* PreviewCaptureViewController.swift */; };
+		9152054027CF690C0098EC78 /* RenderImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152053F27CF690C0098EC78 /* RenderImage.swift */; };
+		9152054227CF6B300098EC78 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152054127CF6B300098EC78 /* SplashViewController.swift */; };
+		9152054427CF929A0098EC78 /* ADFullScreenQRCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152054327CF929A0098EC78 /* ADFullScreenQRCode.swift */; };
+		9152054727CF94580098EC78 /* PreviewCaptureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9152054627CF94580098EC78 /* PreviewCaptureView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,8 +62,14 @@
 		9152052B27CCAD760098EC78 /* GetVersionApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetVersionApp.swift; sourceTree = "<group>"; };
 		9152052D27CCB0400098EC78 /* Archive.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Archive.swift; sourceTree = "<group>"; };
 		9152052F27CCCEBB0098EC78 /* NamesNotification.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NamesNotification.swift; sourceTree = "<group>"; };
-		9152053127CCD3640098EC78 /* PreviewImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewImageViewController.swift; sourceTree = "<group>"; };
 		9152053327CCFF710098EC78 /* UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
+		9152053927CE6F7A0098EC78 /* AppTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTracking.swift; sourceTree = "<group>"; };
+		9152053B27CE6F8E0098EC78 /* GoogleAdsBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleAdsBanner.swift; sourceTree = "<group>"; };
+		9152053D27CF54B80098EC78 /* PreviewCaptureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCaptureViewController.swift; sourceTree = "<group>"; };
+		9152053F27CF690C0098EC78 /* RenderImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RenderImage.swift; sourceTree = "<group>"; };
+		9152054127CF6B300098EC78 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
+		9152054327CF929A0098EC78 /* ADFullScreenQRCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ADFullScreenQRCode.swift; sourceTree = "<group>"; };
+		9152054627CF94580098EC78 /* PreviewCaptureView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewCaptureView.swift; sourceTree = "<group>"; };
 		D9926CC6D403A1E8B642A1B3 /* Pods-Capture.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Capture.release.xcconfig"; path = "Target Support Files/Pods-Capture/Pods-Capture.release.xcconfig"; sourceTree = "<group>"; };
 		DF7E30820333ACEF9FF9A741 /* Pods_Capture.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Capture.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -133,6 +145,8 @@
 				9109BE2627BFD03E00C4A419 /* TakePhotoController.swift */,
 				9109BE2527BFD03E00C4A419 /* TakePhotoDelegates.swift */,
 				9109BE2727BFD03E00C4A419 /* PhotoCapture.swift */,
+				9152053B27CE6F8E0098EC78 /* GoogleAdsBanner.swift */,
+				9152053927CE6F7A0098EC78 /* AppTracking.swift */,
 			);
 			path = TakePhoto;
 			sourceTree = "<group>";
@@ -142,6 +156,7 @@
 			children = (
 				9152052127CCA97B0098EC78 /* StartView.swift */,
 				9109BE2B27BFD5CD00C4A419 /* TakePhotoView.swift */,
+				9152054627CF94580098EC78 /* PreviewCaptureView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -149,9 +164,10 @@
 		9109BE2E27BFD86200C4A419 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				9152054127CF6B300098EC78 /* SplashViewController.swift */,
 				9152052027CCA9750098EC78 /* Start */,
 				9109BE2427BFD03E00C4A419 /* TakePhoto */,
-				9152053127CCD3640098EC78 /* PreviewImageViewController.swift */,
+				9152054527CF93450098EC78 /* PreviewCapture */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -182,6 +198,7 @@
 				9152052D27CCB0400098EC78 /* Archive.swift */,
 				9152052F27CCCEBB0098EC78 /* NamesNotification.swift */,
 				9152053327CCFF710098EC78 /* UIColor.swift */,
+				9152053F27CF690C0098EC78 /* RenderImage.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -211,6 +228,15 @@
 			path = Models;
 			sourceTree = "<group>";
 		};
+		9152054527CF93450098EC78 /* PreviewCapture */ = {
+			isa = PBXGroup;
+			children = (
+				9152053D27CF54B80098EC78 /* PreviewCaptureViewController.swift */,
+				9152054327CF929A0098EC78 /* ADFullScreenQRCode.swift */,
+			);
+			path = PreviewCapture;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -222,6 +248,7 @@
 				9109BE0927BFCDEF00C4A419 /* Sources */,
 				9109BE0A27BFCDEF00C4A419 /* Frameworks */,
 				9109BE0B27BFCDEF00C4A419 /* Resources */,
+				593408DEFB649B110D1C7CB4 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -302,6 +329,23 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		593408DEFB649B110D1C7CB4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capture/Pods-Capture-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Capture/Pods-Capture-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Capture/Pods-Capture-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -309,24 +353,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9152053227CCD3640098EC78 /* PreviewImageViewController.swift in Sources */,
 				9152052227CCA97B0098EC78 /* StartView.swift in Sources */,
 				9109BE2827BFD04400C4A419 /* TakePhotoDelegates.swift in Sources */,
 				9152051A27C7AA360098EC78 /* StartViewController.swift in Sources */,
 				9152052527CCAA2C0098EC78 /* CaptureCell.swift in Sources */,
+				9152054727CF94580098EC78 /* PreviewCaptureView.swift in Sources */,
 				9109BE3027BFDE1900C4A419 /* UIImage.swift in Sources */,
+				9152053E27CF54B80098EC78 /* PreviewCaptureViewController.swift in Sources */,
+				9152053A27CE6F7A0098EC78 /* AppTracking.swift in Sources */,
 				9109BE2927BFD04600C4A419 /* TakePhotoController.swift in Sources */,
+				9152054427CF929A0098EC78 /* ADFullScreenQRCode.swift in Sources */,
 				9109BE1127BFCDEF00C4A419 /* AppDelegate.swift in Sources */,
 				9152052727CCAA890098EC78 /* StartDelegates.swift in Sources */,
+				9152053C27CE6F8E0098EC78 /* GoogleAdsBanner.swift in Sources */,
 				9152052A27CCAB8D0098EC78 /* Capture.swift in Sources */,
 				9152052C27CCAD760098EC78 /* GetVersionApp.swift in Sources */,
 				9152052E27CCB0400098EC78 /* Archive.swift in Sources */,
 				9109BE1327BFCDEF00C4A419 /* SceneDelegate.swift in Sources */,
 				9152053427CCFF710098EC78 /* UIColor.swift in Sources */,
 				9109BE2C27BFD5CD00C4A419 /* TakePhotoView.swift in Sources */,
+				9152054027CF690C0098EC78 /* RenderImage.swift in Sources */,
 				9152053027CCCEBB0098EC78 /* NamesNotification.swift in Sources */,
 				9152051C27C7B40A0098EC78 /* ConvertColor.swift in Sources */,
 				9109BE2A27BFD04800C4A419 /* PhotoCapture.swift in Sources */,
+				9152054227CF6B300098EC78 /* SplashViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +519,7 @@
 				DEVELOPMENT_TEAM = MKHF2R38BL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Capture/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Colors capture";
 				INFOPLIST_KEY_NSCameraUsageDescription = 123;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;
@@ -500,6 +551,7 @@
 				DEVELOPMENT_TEAM = MKHF2R38BL;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = Capture/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Colors capture";
 				INFOPLIST_KEY_NSCameraUsageDescription = 123;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = Main;

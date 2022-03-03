@@ -14,9 +14,7 @@ class TakePhotoView: UIView {
     @IBOutlet weak var verticalCenterConstraint: NSLayoutConstraint!
     @IBOutlet weak var сontinueButton: UIButton!
     @IBOutlet weak var actionButton: UIButton!
-    
-    @IBOutlet weak var temp: UIImageView!
-    
+        
     var currentColor: UIColor!
     
     override func awakeFromNib() {
@@ -40,11 +38,11 @@ class TakePhotoView: UIView {
 extension TakePhotoView {
     func setUI() {
         setLabels()
-
+        ///
         indicatorLineColorView.backgroundColor = .clear
         centerTarget.backgroundColor = .clear
         centerTarget.layer.borderColor = UIColor.white.cgColor
-        
+        ///
         centerTarget.layer.cornerRadius = 4.0
         centerTarget.layer.borderWidth = 1.0
         indicatorLineColorView.layer.borderWidth = 3.0
