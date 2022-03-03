@@ -25,14 +25,6 @@ class StartViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: nReloadTableArchive, object: nil, queue: nil) { notification in
             self.viewSelf.capturesTable.reloadData()
         }
-        
-        NotificationCenter.default.addObserver(forName: nShowImage, object: nil, queue: nil) { notification in
-            guard let index = notification.userInfo?["index"] else {return}
-            let vc = self.storyboard?.instantiateViewController(withIdentifier: "PreviewImageViewController") as! PreviewImageViewController
-            vc.modalPresentationStyle = .pageSheet
-            vc.previewImage = UIImage(data: Archive.archiveCaptures[index as! Int].imageCapture, scale: 1.0)
-            self.present(vc, animated: true)
-        }
     }
     
     ///
