@@ -1,11 +1,14 @@
 import UIKit
+import GoogleMobileAds
 
-class StartViewController: UIViewController {
+class StartViewController: UIViewController, GADBannerViewDelegate {
 
     var viewSelf: StartView! {
         guard isViewLoaded else { return nil }
         return (view as! StartView)
     }
+    
+    var bannerView: GADBannerView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -17,6 +20,7 @@ class StartViewController: UIViewController {
                 self.viewSelf.capturesTable.reloadData()
             }
         }
+        checkAppTrackingTransparency()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -25,6 +29,11 @@ class StartViewController: UIViewController {
         NotificationCenter.default.addObserver(forName: nReloadTableArchive, object: nil, queue: nil) { notification in
             self.viewSelf.capturesTable.reloadData()
         }
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setGadBanner()
     }
     
     ///

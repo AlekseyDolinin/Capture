@@ -2,7 +2,7 @@ import UIKit
 #if canImport(AppTrackingTransparency)
 import AppTrackingTransparency
 
-extension TakePhotoController {
+extension StartViewController {
     
     func checkAppTrackingTransparency() {
 #if canImport(AppTrackingTransparency)
@@ -22,12 +22,12 @@ extension TakePhotoController {
     
     ///
     func showModalAppTrackingDescription() {
-//        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
-//            guard #available(iOS 14.5, *) else { return }
-//            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AppTrackingModalViewController") as! AppTrackingModalViewController
-//            vc.modalPresentationStyle = .overFullScreen
-//            self.present(vc, animated: true)
-//        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            guard #available(iOS 14.5, *) else { return }
+            let vc = self.storyboard?.instantiateViewController(withIdentifier: "AppTrackingModalViewController") as! AppTrackingModalViewController
+            vc.modalPresentationStyle = .overFullScreen
+            self.present(vc, animated: true)
+        }
     }
     
     ///

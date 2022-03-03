@@ -14,15 +14,14 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate, GADB
     var sampleBuffer: CMSampleBuffer!
     var currentColor: UIColor!
     var currentImage: UIImage!
+    var stateApp: StateApp = .capture
+    var bannerView: GADBannerView!
     
     enum StateApp {
         case capture
         case hold
     }
-    
-    var stateApp: StateApp = .capture
-    var bannerView: GADBannerView!
-    
+        
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -30,12 +29,10 @@ class TakePhotoController: UIViewController, AVCapturePhotoCaptureDelegate, GADB
         setDevice()
         setInputOutput()
         startRunningCaptureSession()
-        checkAppTrackingTransparency()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        checkAppTrackingTransparency()
         setGadBanner()
     }
     
